@@ -18,4 +18,8 @@ app.use(express.static("public"))
 
 app.use(cookieParser())
 
+app.get('/', (req, res)=>{
+    res.send("hello world")
+})
+
 export default app
